@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $(document).scroll(function(){
+
+                var scrollAmt = $(document).scrollTop();
+                scrollAmt = parseInt(scrollAmt);
+                
+                if(scrollAmt>100) {
+
+                    $("#stickymenu").addClass("menufixed");
+
+                }
+                else
+                {
+                    $("#stickymenu").removeClass("menufixed");
+                }
+
+            })
+
+        });
+    </script>
+
+    <style>
+        .col-sm-4 {
+            /* width: fit-content; */
+            height: 60px;
+            color: white;
+        }
+
+        .heading {
+            background-color: orangered;
+            color: white;
+            margin: auto;
+        }
+
+        .right-heading {
+            background-color: rgb(70, 70, 114);
+            color: white;
+        }
+
+        .outerbox {
+            position: relative;
+        }
+        .menufixed {
+            width:100%;
+            position: fixed;
+            z-index: 99;
+            top: 0px;
+            background-color: white;
+            box-shadow: 0px 10px 10px silver;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid outerbox">
+        <div class="row">
+            <div class="col-sm-4 heading">Follow us:-
+                <img src="" alt="missing">
+                <img src="" alt="missing">
+                <img src="" alt="missing">
+                <img src="" alt="missing">
+            </div>
+            <div class="col-sm-4 right-heading"></div>
+            <div class="col-sm-2 right-heading">
+                <img src="" alt="">
+                call now ! <br>
+                +91-9198483820
+            </div>
+            <div class="col-sm-2 right-heading">
+                <img src="" alt="">
+                Email now <br>
+                info@digicoders.in
+            </div>
+        </div>
+        <div class="row row-2 border" id="stickymenu">
+            <div class="col-sm-4">
+                <img src="WhatsApp Image 2023-08-20 at 15.29.55.jpg" alt="" height="60px" style="text-align: center;">
+            </div>
+            <div class="col-sm-6">
+                <div class="row" style="padding-top: 15px; font-weight: bold;">
+                    <div class="col-sm-2">Home</div>
+                    <div class="col-sm-2">About Us</div>
+                    <div class="col-sm-2">Courses</div>
+                    <div class="col-sm-2">Pages</div>
+                    <div class="col-sm-2">Blog</div>
+                    <div class="col-sm-2">Contact</div>
+                </div>
+            </div>
+            <div class="col-sm-2" style="background-color: orangered; text-align: center; padding-top: 13px;">ADMISSION
+                OPEN</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12" style="text-align: center; color: rgb(0, 136, 255);">
+                <h1>Welcome to Digicoders <br>
+                    Our Popular Courses
+                </h1><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 gallery-1">
+                <img src="gallery (1).jpg" alt="" height="130px" style="border-radius: 5px;">
+                <h6>Digital Marking</h6>
+                <p>26 Items </p>
+
+
+            </div>
+            <div class="col-sm-2">
+                <img src="gallery (2).jpg" alt="" height="130px" style="border-radius: 5px;">
+                <h6>Graphic Design</h6>
+                <p>78 Items</p>
+            </div>
+            <div class="col-sm-2">
+                <img src="gallery (3).jpg" alt="" height="130px" style="border-radius: 5px;">
+                <h6>Web Design</h6>
+                <p>15 Items</p>
+            </div>
+            <div class="col-sm-2">
+                <img src="gallery (4).jpg" alt="" height="130px" style="border-radius: 5px;">
+                <h6>IT & Software</h6>
+                <p>300 Items</p>
+            </div>
+            <div class="col-sm-2">
+                <img src="gallery (5).jpg" alt="" height="130px" style="border-radius: 5px;">
+                <h6>Digital MArkting</h6>
+                <p>410 Items</p>
+            </div>
+            <div class="col-sm-2">
+                <img src="gallery (6).jpg" alt="" height="130px" style="border-radius: 5px;">
+                <h6>Graphic Design</h6>
+                <p>500 Items</p><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="university.jpg" alt="" height="500px"
+                            style=" border: 4px solid orangered; border-radius: 5px;">
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#" style="text-decoration: none; text-align: center;">
+                            <div
+                                style="background-color: orangered; color: white; border-radius: 5px; height: 80px; width: 200px; text-align: center;">
+                                <h3>
+                                    25+<br>
+                                    <h6>Year of experience</h6>
+                                </h3>
+                            </div>
+                        </a>
+                        <br>
+
+                        <img src="university-2.jpg" alt="" height="300px"
+                            style="border: 4px solid orangered; border-radius: 5px;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <p style="color: orangered;">About Our University</p>
+                <h1>A Few word About the University</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe nihil deleniti sapiente consequuntur
+                    iusto libero corrupti molestiae iste quo repudiandae! Natus eligendi aliquid asperiores ex? Beatae
+                    esse quos adipisci culpa error ipsam obcaecati laborum eum maxime harum accusantium unde enim, est
+                    nemo debitis necessitatibus nisi reiciendis magni tenetur omnis temporibus odio quod sequi.
+                </p>
+                <p style="color: grey;">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore officia ea minus eligendi harum
+                    inventore dignissimos et rem. Dignissimos impedit perspiciatis ipsum consectetur accusantium autem
+                    quos laboriosam officiis? Veniam, facere.
+                </p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h4>Doctoral Degrees</h4>
+                        <p style="color: grey;">Lorem ipsum, dolor sit amet adipisicing elit. Explicabo, ex?</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <h4>Doctoral Degrees</h4>
+                        <p style="color: grey;">Lorem ipsum, dolor sit amet adipisicing elit. Explicabo, ex?</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12"
+                        style="background-color: blue; width: 150px; height: 50px; color: white; border-radius: 5px;">
+                        Read more 👉
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6" style="background-color: rgb(66, 66, 102); color: white; padding: 30px;">
+                    <h1>Our Best Features</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores eius architecto sint. Deserunt,
+                        incidunt qui dolor ipsam hic repellat. Quibusdam quidem amet delectus.</p>
+                        <img src="" alt=" ">
+                        <h3>Skilled Teachers</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur dolorem.amet consectetur adipisicing elit. Accusamus, eveniet.</p>
+                        <h3>Affordable Courses</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur dolorem. consectetur adipisicing elit. Accusamus, eveniet.</p>
+                        <h3>Skilled Teachers</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur dolorem.consectetur adipisicing elit. Accusamus, eveniet.</p>
+                </div>
+                <div class="col-sm-6">
+                    <img src="WhatsApp Image 2023-dfghj08-20 at 15.29.55.jpg" alt="" width="100%">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="gallery (1).jpg" alt="" width="300px">
+                </div>
+                <div class="col-sm-2">
+                    <img src="gallery (2).jpg" alt="" width="300px">
+                </div>
+                <div class="col-sm-2">
+                    <img src="gallery (3).jpg" alt="" width="300px">
+                </div>
+                <div class="col-sm-2">
+                    <img src="gallery (4).jpg" alt="" width="300px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
